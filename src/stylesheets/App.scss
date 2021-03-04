@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  list-style: none;
+  text-decoration: none;
 }
 
 .App-logo {
@@ -20,12 +22,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(174, 209, 17);
+}
+
+.list__item {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #aaa7a7;
+  background-color: rgba(129, 228, 0, 0.76);
+  list-style: none;
 }
 
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {
@@ -34,5 +48,30 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.card {
+  border-radius: 10%;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    width: 20vmin;
+  }
+  &__name {
+    marker: none;
+    color: orange;
+  }
+}
+.footer__span {
+  color: black;
+  &--link {
+    list-style: none;
+    list-style: none;
+    text-decoration: none;
+    color: orange;
+  }
+  &--image {
+    height: 5vmin;
   }
 }
