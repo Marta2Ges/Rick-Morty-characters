@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import FilterBySpecies from './FIlterBySpecies';
 import FilterByName from './FilterByName';
 import '.././stylesheets/App.scss';
 
@@ -8,12 +9,13 @@ const Filters = (props) => {
   const handleForm = (ev) => {
     ev.preventDefault();
   };
-  const { handleFilter } = props;
+  const { name, species, handleFilter } = props;
   return (
     <section className="filter">
       <h2 className="filter__title">Character!</h2>
       <form className="filter__list" onSubmit={handleForm}>
-        <FilterByName handleFilter={handleFilter} />
+        <FilterByName name={name} handleFilter={handleFilter} />
+        <FilterBySpecies name={species} handleFilter={handleFilter} />
       </form>
     </section>
   );

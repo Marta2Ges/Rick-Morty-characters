@@ -15,6 +15,7 @@ function App() {
   // hooks
   const [characters, setCharacters] = useState([]);
   const [name, setName] = useState('');
+  const [species, setSpecies] = useState('');
 
   useEffect(() => {
     GetDataFromApi().then((data) => setCharacters(data));
@@ -24,12 +25,19 @@ function App() {
   const handleFilter = (input) => {
     if (input.key === 'name') {
       setName(input.value);
+    } else if (input.key === 'species') {
+      setSpecies(input.value);
     }
   };
 
-  const filterCharacters = characters.filter((character) => {
-    return character.name.toLowerCase().includes(name.toLowerCase());
-  });
+  const filterCharacters = characters
+    .filter((character) => {
+      return character.name.toLowerCase().includes(name.toLowerCase());
+    })
+    .filter((character) => {
+      return character.species.toLowerCase().includes(species.toLowerCase());
+    });
+
   // console.log(filterCharacters);
 
   // function to render character detailed card
@@ -53,7 +61,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/">
-          <Filters handleFilter={handleFilter} />
+          <Filters name={name} species={species} handleFilter={handleFilter} />
           <CharacterList characters={filterCharacters} />
           <Footer />
         </Route>
