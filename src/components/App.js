@@ -22,8 +22,6 @@ function App() {
 
   // handler function for search
   const handleFilter = (input) => {
-    console.log(input.value, input.key);
-
     if (input.key === 'name') {
       setName(input.value);
     }
@@ -46,7 +44,7 @@ function App() {
       return <CharacterDetail character={selectedCharacter} />;
     } else {
       //Create component for no result"
-      return <p>"No hay resultados"</p>;
+      return <div>No hay resultados</div>;
     }
   };
 
