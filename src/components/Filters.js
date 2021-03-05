@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import FilterByName from './FilterByName';
+import '.././stylesheets/App.scss';
 
 const Filters = (props) => {
   // prevent submit form

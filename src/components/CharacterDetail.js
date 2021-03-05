@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import '.././stylesheets/App.scss';
 
 const CharacterDetail = (props) => {
   console.log(props);
@@ -21,16 +22,17 @@ const CharacterDetail = (props) => {
         </span>
         <span className="detail__icons"></span>
         <p className="detail__text--species">
-          <span className="detail__span">Species:</span> <span className="detail__lower">{species}</span>
+          <span className="detail__span">Species:</span> <span className="detail__result">{species}</span>
         </p>
         <p className="detail__text--status">
-          <span className="detail__span">Status:</span> <span className="detail__lower">{status}</span>
+          <span className="detail__span">Status:</span> <span className="detail__result">{status}</span>
         </p>
         <p className="detail__text--origin">
-          <span className="detail__span">Origin:</span> {origin}
+          <span className="detail__span">Origin:</span> <span className="detail__result">{origin}</span>
         </p>
         <p className="detail__text--episodes">
-          <span className="detail__span">Episodes:</span> {episodes}
+          <span className="detail__span">Episodes:</span>
+          <span className="detail__result">{episodes}</span>
         </p>
       </div>
     </div>

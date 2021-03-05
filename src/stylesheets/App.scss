@@ -16,7 +16,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #3b4558;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,8 +31,9 @@
   margin-bottom: 20px;
   border-radius: 10px;
   border: 1px solid #aaa7a7;
-  background-color: rgba(129, 228, 0, 0.76);
+  background-color: rgb(22, 22, 24);
   list-style: none;
+  text-decoration: none;
 }
 
 .App-link {
@@ -54,15 +55,40 @@
   border-radius: 10%;
   justify-content: center;
   align-items: center;
+  list-style: none;
+  text-decoration: none;
 
   &__image {
     width: 20vmin;
   }
   &__name {
-    marker: none;
-    color: orange;
+    color: rgb(230, 225, 225);
+    list-style: none;
+    text-decoration: none;
+  }
+  &__text--species {
+    color: rgb(70, 175, 201);
+    text-decoration: none;
+    list-style: none;
   }
 }
+.detail {
+  border-radius: 10%;
+  background-color: rgb(22, 22, 24);
+  justify-content: center;
+  &__name {
+    padding-top: 20px;
+    text-transform: uppercase;
+  }
+  &__span {
+    padding-top: 20px;
+    text-transform: uppercase;
+  }
+  &__result {
+    color: rgb(70, 175, 201);
+  }
+}
+
 .footer__span {
   color: black;
   &--link {

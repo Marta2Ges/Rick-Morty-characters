@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../images/Miau.jpg';
+import '.././stylesheets/App.scss';
 
 const Footer = () => {
   return (

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import '.././stylesheets/App.scss';
 
 const CharacterCard = (props) => {
   const { name, image, species, id } = props.character;
