@@ -5,7 +5,7 @@ import '.././stylesheets/App.scss';
 
 const CharacterDetail = (props) => {
   console.log(props);
-  const { name, image, gender, status, origin, location, species, episodes } = props.character;
+  const { name, image, status, origin, species, episodes } = props.character;
   console.log(props.character);
 
   return (
@@ -42,10 +42,8 @@ const CharacterDetail = (props) => {
 CharacterDetail.propTypes = {
   name: PropTypes.string,
   image: PropTypes.string,
-  gender: PropTypes.string,
   status: PropTypes.string,
   origin: PropTypes.string,
-  location: PropTypes.string,
   species: PropTypes.string,
   episodes: PropTypes.number,
   id: PropTypes.number,

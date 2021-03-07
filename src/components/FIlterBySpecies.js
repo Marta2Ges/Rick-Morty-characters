@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import '.././stylesheets/App.scss';
 
 const FilterBySpecies = (props) => {
-  const { species, handleFilter } = props;
+  const { handleFilter } = props;
 
   const handleChange = (ev) => {
     handleFilter({

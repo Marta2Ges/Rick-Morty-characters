@@ -74,6 +74,9 @@
     list-style: none;
   }
 }
+.notFound {
+  font-size: 60px;
+}
 .detail {
   border-radius: 10%;
   background-color: rgb(22, 22, 24);
@@ -124,7 +127,7 @@
   margin-right: 10px;
 }
 .footer__span {
-  margin-left: 950px;
+  margin-left: 600px;
   display: flex;
   flex-direction: row;
   opacity: 88%;
