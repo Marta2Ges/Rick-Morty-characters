@@ -2,7 +2,7 @@
   text-align: center;
   list-style: none;
   text-decoration: none;
-
+  text-transform: uppercase;
   background: url('../images/Fondo.png') no-repeat center / cover fixed;
 }
 
@@ -14,24 +14,29 @@
   align-items: center;
   justify-content: center;
   color: rgb(174, 209, 17);
+  font-family: monospace, bold;
 
   &__title {
     font-size: 80px;
   }
 }
-
-.list__item {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  border: 1px solid #aaa7a7;
-  background-color: rgb(22, 22, 24);
-  opacity: 90%;
-  list-style: none;
+.article {
   text-decoration: none;
+  list-style: none;
 }
-
+.list {
+  &__item {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #aaa7a7;
+    background-color: rgb(22, 22, 24);
+    opacity: 90%;
+    list-style: none;
+    text-decoration: none;
+  }
+}
 .App-link {
   color: #61dafb;
   text-decoration: none;
@@ -39,21 +44,30 @@
   text-decoration: none;
 }
 .card {
+  display: flex;
+  flex-direction: column;
   border-radius: 10%;
   justify-content: center;
   align-items: center;
   list-style: none;
   text-decoration: none;
+  width: 180px;
+  height: 290px;
 
   &__image {
-    margin-top: 20px;
+    margin: 20px;
     width: 20vmin;
+    border-radius: 50%;
   }
   &__name {
+    font-family: monospace, sans-serif;
+    font-size: 15px;
     text-transform: uppercase;
     color: rgb(179, 32, 130);
+    text-decoration: none;
   }
   &__text--species {
+    font-family: monospace, sans-serif;
     color: rgb(172, 162, 218);
     text-decoration: none;
     list-style: none;
@@ -80,11 +94,21 @@
     color: rgb(70, 175, 201);
   }
 }
-
+.filter__title {
+  font-family: monospace, bold;
+  font-size: 30px;
+}
+.filter__list {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 10px 10px 10px;
+}
 .filter__list--input {
   width: 130px;
-  height: 50px;
-  background-color: rgb(70, 175, 201);
+  height: 30px;
+  font-family: monospace, sans-serif;
+  font-size: 18px;
+  background-color: rgb(179, 32, 130);
   color: rgb(24, 31, 25);
   list-style: none;
   text-decoration: none;
@@ -93,9 +117,10 @@
   border-radius: 20%;
   border-radius: 1cm;
   font-size: 22px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow';
+  font-family: monospace, 'Arial Narrow';
   list-style: none;
   text-decoration: none;
+  margin-right: 10px;
 }
 .footer__span {
   margin-left: 950px;

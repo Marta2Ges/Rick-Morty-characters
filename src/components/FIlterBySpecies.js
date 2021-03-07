@@ -14,7 +14,7 @@ const FilterBySpecies = (props) => {
   return (
     <div className="filter__list">
       <label className="filter__list--label" htmlFor="species">
-        Especie:
+        Specie:
       </label>
       <input className="filter__list--input" type="text" name="species" id="species" onChange={handleChange} />
     </div>
