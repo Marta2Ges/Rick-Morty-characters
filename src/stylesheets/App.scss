@@ -1,7 +1,5 @@
 .App {
   text-align: center;
-  list-style: none;
-  text-decoration: none;
   text-transform: uppercase;
   background: url('../images/Fondo.png') no-repeat center / cover fixed;
 }
@@ -19,10 +17,6 @@
   &__title {
     font-size: 80px;
   }
-}
-.article {
-  text-decoration: none;
-  list-style: none;
 }
 .list {
   &__item {
@@ -64,8 +58,6 @@
     font-size: 15px;
     text-transform: uppercase;
     color: rgb(179, 32, 130);
-    text-decoration: none;
-    text-decoration: none !important;
   }
   &__text--species {
     font-family: monospace, sans-serif;
@@ -136,14 +128,19 @@
   color: rgb(250, 243, 237);
   &--link {
     padding: 10px 10px 10px 10px;
-    list-style: none;
+
     list-style: none;
     text-decoration: none;
     color: rgb(255, 166, 0);
   }
+
   &--image {
     border-radius: 20%;
     background-color: rgb(255, 166, 0);
     height: 5vmin;
   }
+}
+a:-webkit-any-link {
+  list-style: none;
+  text-decoration: none;
 }

@@ -1,7 +1,6 @@
 // React
 import React from 'react';
 import '.././stylesheets/App.scss';
-import '../images/NoFound.png';
 
 const NoResults = (props) => {
   return (
