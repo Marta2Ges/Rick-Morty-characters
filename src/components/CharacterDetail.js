@@ -12,6 +12,7 @@ const CharacterDetail = (props) => {
     <div>
       <Link to="/">
         <span className="detail__span">
+          <p>Come Back!</p>
           <i className="fas fa-times detail__close"></i>
         </span>
       </Link>

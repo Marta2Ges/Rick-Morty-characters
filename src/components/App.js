@@ -8,6 +8,7 @@ import Footer from './Footer';
 import Filters from './Filters';
 import CharacterList from './CharacterList';
 import CharacterDetail from './CharacterDetail';
+import NoResults from './NoResults';
 
 import '.././stylesheets/App.scss';
 
@@ -52,7 +53,7 @@ function App() {
       return <CharacterDetail character={selectedCharacter} />;
     } else {
       //Create component for no result"
-      return <div>No hay resultados</div>;
+      return <NoResults />;
     }
   };
 
