@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import '.././stylesheets/App.scss';
 
 const FilterByName = (props) => {
-  const { handleFilter } = props;
+  const { name, handleFilter } = props;
 
   const handleChange = (ev) => {
     handleFilter({
@@ -16,7 +16,14 @@ const FilterByName = (props) => {
       <label className="filter__list--label" htmlFor="name">
         Name:
       </label>
-      <input className="filter__list--input" type="text" name="name" id="characterSearch" onChange={handleChange} />
+      <input
+        className="filter__list--input"
+        type="text"
+        name="name"
+        id="characterSearch"
+        value={name}
+        onChange={handleChange}
+      />
     </div>
   );
 };

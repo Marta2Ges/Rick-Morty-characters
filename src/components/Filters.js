@@ -15,7 +15,7 @@ const Filters = (props) => {
       <h2 className="filter__title">Character!</h2>
       <form className="filter__list" onSubmit={handleForm}>
         <FilterByName name={name} handleFilter={handleFilter} />
-        <FilterBySpecies name={species} handleFilter={handleFilter} />
+        <FilterBySpecies specie={species} handleFilter={handleFilter} />
       </form>
     </section>
   );
