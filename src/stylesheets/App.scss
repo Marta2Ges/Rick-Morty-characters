@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+  list-style-type: none;
+}
 .App {
   text-align: center;
   text-transform: uppercase;
@@ -45,15 +51,16 @@
   align-items: center;
   list-style: none;
   text-decoration: none;
-  width: 180px;
+  width: 200px;
   height: 310px;
 
   &__image {
-    margin: 20px;
+    margin: 15px;
     width: 20vmin;
     border-radius: 50%;
   }
   &__name {
+    margin: 10px;
     font-family: monospace, sans-serif;
     font-size: 15px;
     text-transform: uppercase;
@@ -90,6 +97,11 @@
     color: rgb(70, 175, 201);
   }
 }
+.span_retour {
+  padding: 10px;
+  color: rgb(14, 10, 12);
+  font-size: 30px;
+}
 .filter__title {
   font-family: monospace, bold;
   font-size: 30px;
@@ -119,7 +131,7 @@
   margin-right: 10px;
 }
 .footer__span {
-  margin-left: 600px;
+  position: sticky;
   display: flex;
   flex-direction: row;
   opacity: 88%;
@@ -128,12 +140,10 @@
   color: rgb(250, 243, 237);
   &--link {
     padding: 10px 10px 10px 10px;
-
     list-style: none;
     text-decoration: none;
     color: rgb(255, 166, 0);
   }
-
   &--image {
     border-radius: 20%;
     background-color: rgb(255, 166, 0);
