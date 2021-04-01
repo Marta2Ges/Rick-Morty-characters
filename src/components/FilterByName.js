@@ -21,8 +21,8 @@ const FilterByName = (props) => {
         type="text"
         name="name"
         id="characterSearch"
-        value={name}
         onChange={handleChange}
+        value={name}
       />
     </div>
   );
