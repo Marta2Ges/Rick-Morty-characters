@@ -32,7 +32,7 @@
     border-radius: 10px;
     border: 1px solid #aaa7a7;
     background-color: rgb(22, 22, 24);
-    opacity: 90%;
+    opacity: 0.9;
     list-style: none;
     text-decoration: none;
   }
@@ -79,7 +79,7 @@
 .detail {
   border-radius: 10%;
   background-color: rgb(22, 22, 24);
-  opacity: 80%;
+  opacity: 0.8;
   justify-content: center;
 
   &__name {
